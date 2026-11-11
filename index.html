@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Book","name":"How Leaders Influence","alternativeHeadline":"How to develop influence and lead with impact","author":{"@type":"Person","name":"Harjeet Khanduja","url":"https://harjeetkhanduja.com"},"publisher":{"@type":"Organization","name":"Rupa Publications"},"bookFormat":"https://schema.org/Hardcover","image":"https://howleadersinfluence.com/cover.jpg","offers":{"@type":"Offer","price":"599","priceCurrency":"INR"}}
+{"@context":"https://schema.org","@type":"Book","name":"How Leaders Influence","alternativeHeadline":"How to develop influence and lead with impact","author":{"@type":"Person","name":"Harjeet Khanduja","url":"https://harjeetkhanduja.com"},"publisher":{"@type":"Organization","name":"Rupa Publications"},"bookFormat":"https://schema.org/Hardcover","image":"https://howleadersinfluence.com/cover.jpg","offers":{"@type":"Offer","price":"795","priceCurrency":"INR"}}
 </script>
 <style>
 :root{
@@ -309,11 +309,14 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .pricecard .img img{box-shadow:0 12px 26px rgba(50,54,92,.25);border-radius:2px}
 .pricecard .body{padding:26px}
 .pricecard .fmt{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-ink)}
-.pricecard .amt{font-family:"Libre Caslon Text",serif;font-size:48px;color:var(--navy);line-height:1.1;margin:4px 0 10px}
+.pricecard .amt{font-family:"Libre Caslon Text",serif;font-size:42px;color:var(--navy);line-height:1.1;margin:4px 0 10px}
 .pricecard ul{list-style:none;margin-bottom:18px}
 .pricecard li{font-size:14.5px;padding:4px 0 4px 24px;position:relative}
 .pricecard li::before{content:"✓";position:absolute;left:0;color:var(--teal-ink);font-weight:800}
 .pricecard .btns{display:grid;gap:10px}
+.pricecard .formats{display:flex;flex-wrap:wrap;gap:8px 32px}
+.pricecard .formats>div+div{padding-left:32px;border-left:1px solid var(--line)}
+@media(max-width:600px){.pricecard .formats>div+div{padding-left:0;border-left:0}}
 @media(max-width:600px){.pricecard{grid-template-columns:1fr}.pricecard .img img{max-width:160px}}
 .notify{margin-top:56px;background:var(--teal-soft);border-radius:20px;padding:30px;display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:center}
 .notify h3{font-size:26px;color:var(--navy)}
@@ -349,7 +352,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
 </head>
 <body>
 
-<div class="topbar">Releasing <b>November 2026</b> from Rupa Publications · Hardcover <span data-cfg="price">₹599</span> · Reserve your copy today</div>
+<div class="topbar">Releasing <b>November 2026</b> from Rupa Publications · Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span> · Reserve your copy today</div>
 
 <nav>
   <div class="wrap">
@@ -380,8 +383,8 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
         <div><b>7</b>Techniques</div>
       </div>
       <div class="buybar">
-        <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener"><span class="stack">Buy on Amazon<small>Hardcover <span data-cfg="price">₹599</span></small></span></a>
-        <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener"><span class="stack">Buy on Flipkart<small>Hardcover <span data-cfg="price">₹599</span></small></span></a>
+        <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener"><span class="stack">Buy on Amazon<small>Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></small></span></a>
+        <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener"><span class="stack">Buy on Flipkart<small>Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></small></span></a>
       </div>
     </div>
     <div class="coverwrap">
@@ -419,7 +422,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
       </div>
     </div>
     <div class="buybar">
-      <span class="price">Hardcover <span data-cfg="price">₹599</span></span>
+      <span class="price">Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
       <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
       <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Buy on Flipkart</a>
     </div>
@@ -489,7 +492,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
       <span class="chip"><i>20</i>Industries and 18 professions</span>
     </div>
     <div class="buybar">
-      <span class="price">Hardcover <span data-cfg="price">₹599</span></span>
+      <span class="price">Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
       <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
       <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Buy on Flipkart</a>
     </div>
@@ -609,7 +612,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
     <p class="leaders-hint">Hover over a leader, or tap on a phone, to read about them.</p>
 
     <div class="buybar">
-      <span class="price">Hardcover <span data-cfg="price">₹599</span></span>
+      <span class="price">Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
       <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
       <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Buy on Flipkart</a>
     </div>
@@ -656,7 +659,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
       <span class="chip"><i>25</i>Leaders interviewed</span>
     </div>
     <div class="buybar">
-      <span class="price">Hardcover <span data-cfg="price">₹599</span></span>
+      <span class="price">Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
       <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
       <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Buy on Flipkart</a>
     </div>
@@ -698,7 +701,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
       <div class="persona"><div class="ic">💡</div><h3>Entrepreneurs</h3><p>who must win over investors, partners, customers and their first team.</p></div>
     </div>
     <div class="buybar">
-      <span class="price">Hardcover <span data-cfg="price">₹599</span></span>
+      <span class="price">Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
       <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
       <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Buy on Flipkart</a>
     </div>
@@ -763,7 +766,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
     </div>
 
     <div class="buybar">
-      <span class="price">Hardcover <span data-cfg="price">₹599</span></span>
+      <span class="price">Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
       <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
       <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Buy on Flipkart</a>
     </div>
@@ -781,7 +784,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
     <details><summary>I am not a boss. Is this book for me?</summary><p>Yes. Influence matters most where you have no formal authority, with peers, partners, customers and even your own boss. And if you are a boss, every boss has a boss.</p></details>
     <details><summary>Can influence really be learned?</summary><p>Yes. All of us influence every day, often without knowing the technique. The book structures what 25 leaders learned through experience into frameworks and habits you can practise.</p></details>
     <details><summary>How is this different from books on persuasion?</summary><p>Most books on influence are written with a marketing mindset or for social media. This one is written for organisational leaders and combines credibility, relationships, alliances and context with Indian wisdom and modern research.</p></details>
-    <details><summary>When will the book be available?</summary><p>How Leaders Influence releases in November 2026 from Rupa Publications as a hardcover at ₹599.</p></details>
+    <details><summary>When will the book be available?</summary><p>How Leaders Influence releases in November 2026 from Rupa Publications as a hardcover at ₹795 and as an eBook at ₹600.</p></details>
   </div>
 </section>
 
@@ -796,14 +799,13 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
       <div class="ccol no"><h3>Executive leadership program</h3><ul>
         <li>Fees running into lakhs of rupees</li><li>Weeks away from work and family</li><li>Mostly global case studies</li><li>Learning ends when the program ends</li></ul></div>
       <div class="ccol yes"><h3>How Leaders Influence</h3><ul>
-        <li>₹599 for the hardcover</li><li>Read at your own pace, one chapter a day</li><li>166 stories from Indian and global workplaces</li><li>A reference you return to before every big conversation</li></ul></div>
+        <li>₹795 for the hardcover, ₹600 for the eBook</li><li>Read at your own pace, one chapter a day</li><li>166 stories from Indian and global workplaces</li><li>A reference you return to before every big conversation</li></ul></div>
     </div>
 
     <div class="pricecard">
       <div class="img"><img src="cover.jpg" alt="How Leaders Influence hardcover" loading="lazy"></div>
       <div class="body">
-        <div class="fmt">Hardcover</div>
-        <div class="amt"><span data-cfg="price">₹599</span></div>
+        <div class="formats"><div><div class="fmt">Hardcover</div><div class="amt"><span data-cfg="price">₹795</span></div></div><div><div class="fmt">eBook</div><div class="amt"><span data-cfg="ebookPrice">₹600</span></div></div></div>
         <ul><li>All 25 chapters and 166 stories</li><li>8 original frameworks and 7 techniques</li><li>Foreword by Harsh Goenka</li><li>Published by Rupa Publications</li></ul>
         <div class="btns">
           <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
@@ -870,7 +872,7 @@ footer .social{display:flex;gap:16px;flex-wrap:wrap}
 </footer>
 
 <div class="sticky" id="sticky">
-  <span class="t">How Leaders Influence · Hardcover <span data-cfg="price">₹599</span></span>
+  <span class="t">How Leaders Influence · Hardcover <span data-cfg="price">₹795</span> · eBook <span data-cfg="ebookPrice">₹600</span></span>
   <a class="btn btn-red" data-buy="amazon" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
   <a class="btn btn-navy" data-buy="flipkart" href="#" target="_blank" rel="noopener">Flipkart</a>
 </div>
@@ -890,7 +892,8 @@ const CONFIG = {
   // Enquiry forms. When a link is set, the button opens that Google Form in a new tab.
   bulkForm:  "https://docs.google.com/forms/d/e/1FAIpQLSdQXwBKamHcwKXc9xjsLV2bOFU7XK3zHMaAsMi7imKphONlTw/viewform",
   speakForm: "https://docs.google.com/forms/d/e/1FAIpQLSc9JYZJiFaieDeco8G9iIKctA4SbeLhmhaUzP8XXSf4vGaGew/viewform",
-  price:    "₹599",                        // type "Revealing soon" here to hide the price everywhere
+  price:    "₹795",                        // hardcover. Type "Revealing soon" here to hide it everywhere
+  ebookPrice: "₹600",                      // eBook
   reach:    "3 lakh+",
   views:    "10 million+",                   // combined followers, e.g. "3 lakh+"
   // Google Form for the Notify me box. Leave blank to show a mailto fallback.
