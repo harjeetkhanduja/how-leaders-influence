@@ -924,7 +924,7 @@ document.querySelectorAll('[data-cfg]').forEach(e=>e.textContent=CONFIG[e.datase
 
 const initials=n=>n.replace(/^(Dr\.|Prof\.|Professor|Dr)\s+/,'').split(/\s+/).filter(w=>/^[A-Z]/.test(w)).map(w=>w[0]).slice(0,2).join('');
 const slug=n=>n.toLowerCase().replace(/^(dr\.|prof\.|professor)\s+/,'').replace(/[^a-z]+/g,'-').replace(/^-|-$/g,'');
-const avatar=(n,folder)=>`<div class="av"><img src="${folder==='leaders'?'leader-'+slug(n)+'.jpg':'assets/'+folder+'/'+slug(n)+'.jpg'}" alt="${n}" loading="lazy" onerror="this.replaceWith(document.createTextNode('${initials(n)}'))"></div>`;
+const avatar=(n,folder)=>`<div class="av"><img src="${(folder==='leaders'?'leader-':'endorser-')+slug(n)+'.jpg'}" alt="${n}" loading="lazy" onerror="this.replaceWith(document.createTextNode('${initials(n)}'))"></div>`;
 
 /* Ticker */
 const topics=["Influencing Upwards","Executive Presence","Personal Brand","Building Alliances","Storytelling","Negotiation","Crisis Leadership","Cultural Change","Digital Influence and AI","Emotional Intelligence","Influencing Across Cultures","The Language of Influence","Subtle Persuasion"];
@@ -947,7 +947,7 @@ lg.querySelectorAll('.leader').forEach(c=>{
 });
 document.addEventListener('click',e=>{if(!e.target.closest('.leader'))lg.querySelectorAll('.leader.open').forEach(x=>x.classList.remove('open'))});
 
-/* Testimonials (headshots optional: assets/endorsers/<name-slug>.jpg) */
+/* Testimonials (headshots: endorser-<name-slug>.jpg) */
 const T=[
 ["Dr. Marshall Goldsmith","Thinkers50 #1 Executive Coach and New York Times bestselling author","Many talented leaders hit a ceiling not because they lack ability, but because they have never learned to bring others with them. Harjeet Khanduja addresses this gap directly, showing how the most critical leadership skill is rarely taught and almost never discussed: the ability to shape how others think. Grounded in the real experiences of leaders across industries and cultures, this book is practical, wise, and long overdue. Read it and you will lead differently.",1],
 ["R Seshasayee","Chairman, Asian Paints","Harjeet lucidly explains the art and science of influencing which is the password to get alignment with your followers, superiors or even your customers. The book is not prescriptive, but makes you reflect, which is what a good book ought to do."],
